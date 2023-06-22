@@ -10,6 +10,84 @@
     <title>Book a Course</title>
 </head>
 <body>
+
+    <div class="header">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text_align_center">
+
+                <div class="col float-left">
+                    <p></p>
+                    <p>Home</p>
+                </div>
+
+                <div class="col center">
+                    <p></p>
+                    <p>Courses</p>
+                </div>
+
+                <div class="col center">
+                    <p></p>
+                    <p>About Us</p>
+                </div>
+
+                <div class="col float-right">
+                    <p></p>
+                    <p>Contact</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="middle_page">
+        <p>This is the middle page.</p>
+
+        <form id="firstForm" action="./result.html" method="GET" onsubmit="validateForm()">
+
+            <label for="firstName">Your First Name: </label><br/>
+            <input type="text" id="firstName" name="firstName" /><br/>
+            <div id="firstNameShort" class="alert-message"></div><br/>
+
+            <label for="lastName">Your Last Name: </label><br/>
+            <input type="text" id="lastName" name="lastName" /><br/>
+            <div id="lastNameShort" class="alert-message"></div><br/>
+
+            <label for="email">Your Email: </label><br/>
+            <input type="email" id="email" name="email" /><br/>
+            <div id="email-wrong" class="alert-message"></div>
+
+            <label for="zip">Your Postal Code: </label><br/>
+            <input type="number" id="zip" name="zip" /><br/>
+            <div id="zipIncorrect" class="alert-message"></div><br/>
+
+            <label for="city">Your Current City: </label><br/>
+            <input type="text" id="city" name="city" /><br/>
+            <div id="cityIncorrect" class="alert-message"></div><br/>
+
+            <label for="quantity">Ticket Amount: </label><br/>
+            <input type="number" id="quantity" name="quantity" /><br/>
+            <div id="quantityIncorrect" class="alert-message"></div><br/>
+
+            <div id="error-message-container"></div>
+
+            <input class="form-button" type="submit" value="submit" />
+
+        </form>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col">
+                    <p><br></p>
+                    <p>This is the footer</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
     
 </body>
 </html>
