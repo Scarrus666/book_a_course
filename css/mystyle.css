@@ -1,6 +1,10 @@
 body
 {
     background-color: rgb(225, 225, 225);
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 }
 
 .header
@@ -10,6 +14,13 @@ body
     background-color: white;
     margin-bottom: auto;
     z-index: 100;
+}
+
+
+.middle_page
+{
+    padding: 25px;
+    flex: 1;    
 }
 
 .footer
@@ -41,11 +52,4 @@ body
 {
     color: red;
     font-size: bold;
-}
-
-.middle_page
-{
-    height: 100%;
-    width: 100%;
-    padding: 25px;
 }

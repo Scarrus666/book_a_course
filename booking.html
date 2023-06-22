@@ -11,6 +11,7 @@
 </head>
 <body>
 
+<nav>
     <div class="header">
         <div class="container">
             <div class="row justify-content-center align-items-center text_align_center">
@@ -38,11 +39,12 @@
             </div>
         </div>
     </div>
+</nav>
 
     <div class="middle_page">
         <p>This is the middle page.</p>
 
-        <form id="firstForm" action="./result.html" method="GET" onsubmit="validateForm()">
+        <form id="firstForm" action="./confirmation_booking.html" method="GET" onsubmit="validateForm()">
 
             <label for="firstName">Your First Name: </label><br/>
             <input type="text" id="firstName" name="firstName" /><br/>
@@ -64,9 +66,6 @@
             <input type="text" id="city" name="city" /><br/>
             <div id="cityIncorrect" class="alert-message"></div><br/>
 
-            <label for="quantity">Ticket Amount: </label><br/>
-            <input type="number" id="quantity" name="quantity" /><br/>
-            <div id="quantityIncorrect" class="alert-message"></div><br/>
 
             <div id="error-message-container"></div>
 
@@ -76,18 +75,20 @@
 
     </div>
 
+<footer>
     <div class="footer">
-
         <div class="container">
             <div class="row justify-content-center align-items-center">
+
                 <div class="col">
                     <p><br></p>
                     <p>This is the footer</p>
                 </div>
+
             </div>
         </div>
-
     </div>
+</footer>
     
 </body>
 </html>
