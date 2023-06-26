@@ -53,4 +53,10 @@ body
     font-size: bold;
 }
 
-
+.input
+{
+    width: 250px;
+    border-radius: 25px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
