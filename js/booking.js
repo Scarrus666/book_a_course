@@ -11,11 +11,14 @@ function preserveResult()
     validateEmail();
 
     sessionStorage.setItem("fNAme", firstName.value);
-    sessionStorage.setItem("lName", lastName.value);
-    sessionStorage.setItem("selectedCountry", country.value);
-    sessionStorage.setItem("zipCode", zip.value);
-    sessionStorage.setItem("cityName", city.value);
-    sessionStorage.setItem("emailAdress", email.value);
+    //sessionStorage.setItem("lName", lastName.value);
+    //sessionStorage.setItem("selectedCountry", country.value);
+    //sessionStorage.setItem("zipCode", zip.value);
+    //sessionStorage.setItem("cityName", city.value);
+    // sessionStorage.setItem("emailAdress", email.value);
+
+    alert(document.getElementById("email").value);
+
 }
 
 function validateForm()
