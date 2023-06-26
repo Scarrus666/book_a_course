@@ -1,12 +1,13 @@
 const email = getElementById("email")
 const firstName = getElementById("firstName");
 const lastName = getElementById("lastName");
+const country = getElementById("country");
 const zip = getElementByID("zip");
 const city = getElementById("city")
 
-
 function preserveResult()
 {
+    validateEmail();
     validateForm();
 
     sessionStorage.setItem("fNAme", firstName.value);
@@ -77,7 +78,7 @@ function validateEmail()
       
         if (email.value.match(validRegex)) 
             {
-                document.getElementById("email-wrong").innerHTML ="";
+                null;
             } 
             
         else   
