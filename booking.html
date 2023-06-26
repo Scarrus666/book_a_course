@@ -44,10 +44,10 @@
     <div class="middle_page">
         <p>This is the middle page.</p>
 
-        <form id="firstForm" action="./confirmation_booking.html" method="GET" onsubmit="validateForm()">
+        <form id="firstForm" action="./confirmation_booking.html" method="GET" onsubmit="validateForm(), validateEmail(input)">
 
-            <label for="email">Email: </label><br/>
-            <input type="text" class="input" id="email" name="email" /><br>
+            <label for="email">Email: </label><br>
+            <input type="text" class="input" name="email" /><br>
             <div id="email-wrong" class="alert-message"></div><br>
 
             <label for="firstName">First Name: </label><br>
@@ -321,9 +321,6 @@
             <label for="city">Your Current City: </label><br>
             <input type="text" class="input" id="city" name="city" /><br>
             <div id="cityIncorrect" class="alert-message"></div><br>
-
-
-            <div id="error-message-container"></div>
 
             <input class="form-button" type="submit" value="submit" />
 

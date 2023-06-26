@@ -20,22 +20,27 @@ function validateForm()
             {
                 // alert("Text zu kurz");
                 event.preventDefault();
-                document.getElementById("firstNameWrong").innerHTML = "Your name is too short";
+                document.getElementById("firstNameWrong").innerHTML = "Please enter a real name";
             }
 
         if(document.getElementById("firstName").value.length > 747)
             {
                 event.preventDefault();
-                document.getElementById("firstNameWrong").innerHTML = "Your name is too long";
+                document.getElementById("firstNameWrong").innerHTML = "Please enter a real name";
             }
 
         if (document.getElementById("lastName").value.length < 3)
             {
                 event.preventDefault();
-                document.getElementById("lastNameWrong").innerHTML = "Text too short";
+                document.getElementById("lastNameWrong").innerHTML = "Please enter a real name";
             }
 
-        if (document.getElementById("email").value)
+        if (document.getElementById("lastName").value.length > 666)
+            {
+                event.preventDefault();
+                document.getElementById("lastNameWrong").innerHTML = "Please enter a real name";
+            }
+
 
         // if (document.getElementById("zip").value.length < 4 || document.getElementById("zip").value.length > 10)
         //    {                                   // .value.length is for string length
@@ -62,26 +67,22 @@ function validateForm()
             }
     }
 
-    function ValidateEmail(input) {
+function validateEmail(input) 
+    {
 
         var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
       
-        if (input.value.match(validRegex)) {
-      
-          alert("Valid email address!");
-      
-          document.form1.text1.focus();
-      
-          return true;
-      
-        } else {
-      
-          alert("Invalid email address!");
-      
-          document.form1.text1.focus();
-      
-          return false;
-      
-        }
-      
+        if (input.value.match(validRegex)) 
+            {
+                alert("Valid email address!"); 
+                document.firstForm.email.focus();
+                return true;
+            } 
+            
+        else   
+            {
+                alert("Invalid email address!");      
+                document.secondForm.email.focus();
+                return false;      
+            }     
       }
