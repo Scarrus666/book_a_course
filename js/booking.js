@@ -1,21 +1,26 @@
-const email = getElementById("email")
-const firstName = getElementById("firstName");
-const lastName = getElementById("lastName");
-const country = getElementById("country");
-const zip = getElementByID("zip");
-const city = getElementById("city")
+const email = document.getElementById("email");
+const firstName = document.getElementById("firstName");
+const lastName = document.getElementById("lastName");
+const country = document.getElementById("country");
+const zip = document.getElementById("zip");
+const city = document.getElementById("city");
 
 function preserveResult()
 {
     validateForm();
     validateEmail();
 
+
+
     sessionStorage.setItem("fNAme", firstName.value);
-    //sessionStorage.setItem("lName", lastName.value);
-    //sessionStorage.setItem("selectedCountry", country.value);
-    //sessionStorage.setItem("zipCode", zip.value);
-    //sessionStorage.setItem("cityName", city.value);
-    // sessionStorage.setItem("emailAdress", email.value);
+
+    alert(document.getElementById("email").value);
+
+    sessionStorage.setItem("lName", lastName.value);
+    sessionStorage.setItem("selectedCountry", country.value);
+    sessionStorage.setItem("zipCode", zip.value);
+    sessionStorage.setItem("cityName", city.value);
+    sessionStorage.setItem("emailAdress", email.value);
 
     alert(document.getElementById("email").value);
 
