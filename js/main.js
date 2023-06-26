@@ -77,7 +77,7 @@ function validateEmail()
       
         if (email.value.match(validRegex)) 
             {
-                document.getElementById("email-wrong").innerHTML ="email correct!";
+                document.getElementById("email-wrong").innerHTML ="";
             } 
             
         else   
