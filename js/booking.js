@@ -7,14 +7,15 @@ const city = getElementById("city")
 
 function preserveResult()
 {
-    validateEmail();
     validateForm();
+    validateEmail();
 
     sessionStorage.setItem("fNAme", firstName.value);
     sessionStorage.setItem("lName", lastName.value);
-    sessionStorage.setItem("emailAdress", email.value);
+    sessionStorage.setItem("selectedCountry", country.value);
     sessionStorage.setItem("zipCode", zip.value);
     sessionStorage.setItem("cityName", city.value);
+    sessionStorage.setItem("emailAdress", email.value);
 }
 
 function validateForm()
