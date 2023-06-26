@@ -3,6 +3,9 @@ const lastName = getElementById("lastName");
 const zip = getElementByID("zip");
 const city = getElementById("city")
 
+var email = getElementById("email");
+
+
 function preserveResult()
 {
     validateForm();
@@ -67,22 +70,19 @@ function validateForm()
             }
     }
 
-function validateEmail(input) 
+function validateEmail(email) 
     {
-
         var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
       
-        if (input.value.match(validRegex)) 
+        if (email.value.match(validRegex)) 
             {
-                alert("Valid email address!"); 
-                document.firstForm.email.focus();
-                return true;
+                // alert("Valid email address!"); 
+                document.getElementById("email-wrong").innerHTML ="email correct!";
             } 
             
         else   
             {
-                alert("Invalid email address!");      
-                document.secondForm.email.focus();
-                return false;      
+                event.preventDefault();
+                document.getElementById("email-wrong").innerHTML ="Please input a correct email adress";
             }     
       }
