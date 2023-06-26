@@ -1,22 +1,60 @@
+const firstName = getElementById("firstName");
+const lastName = getElementById("lastName");
+const zip = getElementByID("zip");
+const city = getElementById("city")
+
+function preserveResult()
+{
+    validateForm();
+
+    sessionStorage.setItem("fNAme", firstName.value);
+    sessionStorage.setItem("lName", lastName.value);
+    sessionStorage.setItem("emailAdress", email.value);
+    sessionStorage.setItem("zipCode", zip.value);
+    sessionStorage.setItem("cityName", city.value);
+    sessionStorage.setItem("quantityNumber", quantity.value);
+    sessionStorage.setItem("secretField", secredField.value);
+}
+
 function validateForm()
     {
-        if (document.getElementById("firstName").value.length < 3)
+        if (document.getElementById("firstName").value.length < 1)
             {
                 // alert("Text zu kurz");
                 event.preventDefault();
-                document.getElementById("firstNameShort").innerHTML = "Text too short";
+                document.getElementById("firstNameWrong").innerHTML = "Your name is too short";
+            }
+
+        if(document.getElementById("firstName").value.length > 747)
+            {
+                event.preventDefault();
+                document.getElementById("firstNameWrong").innerHTML = "Your name is too long";
             }
 
         if (document.getElementById("lastName").value.length < 3)
             {
                 event.preventDefault();
-                document.getElementById("lastNameShort").innerHTML = "Text too short";
+                document.getElementById("lastNameWrong").innerHTML = "Text too short";
             }
 
-        if (document.getElementById("zip").value.length < 4 || document.getElementById("zip").value.length > 10)
-            {                                   // .value.length is for string length
+        if (document.getElementById("email").value)
+
+        // if (document.getElementById("zip").value.length < 4 || document.getElementById("zip").value.length > 10)
+        //    {                                   // .value.length is for string length
+        //        event.preventDefault();
+        //        document.getElementById("zipIncorrect").innerHTML = "Zip Code Incorrect";
+        //    }
+
+        if (document.getElementById("zip").value.length < 4)
+            {
                 event.preventDefault();
-                document.getElementById("zipIncorrect").innerHTML = "Zip Code Incorrect";
+                document.getElementById("zipIncorrect").innerHTML = "Your ZIP code is too short";
+            }
+
+        if (document.getElementById("zip").value.length > 5)
+            {
+                event.preventDefault();
+                document.getElementById("zipIncorrect").innerHTML = "Your ZIP code is too long";
             }
 
         if (document.getElementById("city").value.length < 1 || document.getElementById("city").value.length > 87)
@@ -24,27 +62,4 @@ function validateForm()
                 event.preventDefault();
                 document.getElementById("cityIncorrect").innerHTML = "Your Input is Incorrect";
             }
-
-        if (document.getElementById("quantity").value < 1) // .value is for number quantity
-            {
-                event.preventDefault();
-                document.getElementById("quantityIncorrect").innerHTML = "Please buy at least one ticket";
-            }
-
-        else if (document.getElementById("quantity").value > 5)
-            {
-                event.preventDefault();
-                document.getElementById("quantityIncorrect").innerHTML = "We are sorry but you cannot buy more than 5 tickets"
-            }
-    }
-
-    function preserveResult()
-    {
-        sessionStorage.setItem("fNAme", firstName.value);
-        sessionStorage.setItem("lName", lastName.value);
-        sessionStorage.setItem("emailAdress", email.value);
-        sessionStorage.setItem("zipCode", zip.value);
-        sessionStorage.setItem("cityName", city.value);
-        sessionStorage.setItem("quantityNumber", quantity.value);
-        sessionStorage.setItem("secretField", secredField.value);
     }

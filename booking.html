@@ -46,25 +46,31 @@
 
         <form id="firstForm" action="./confirmation_booking.html" method="GET" onsubmit="validateForm()">
 
-            <label for="firstName">Your First Name: </label><br/>
-            <input type="text" id="firstName" name="firstName" /><br/>
-            <div id="firstNameShort" class="alert-message"></div><br/>
+            <label for="email">Email: </label><br/>
+            <input type="text" id="email" name="email" /><br>
+            <div id="email-wrong" class="alert-message"></div><br>
 
-            <label for="lastName">Your Last Name: </label><br/>
-            <input type="text" id="lastName" name="lastName" /><br/>
-            <div id="lastNameShort" class="alert-message"></div><br/>
+            <label for="firstName">First Name: </label><br>
+            <input type="text" id="firstName" name="firstName" /><br>
+            <div id="firstNameWrong" class="alert-message"></div><br>
 
-            <label for="email">Your Email: </label><br/>
-            <input type="email" id="email" name="email" /><br/>
-            <div id="email-wrong" class="alert-message"></div>
+            <label for="lastName">Last Name: </label><br>
+            <input type="text" id="lastName" name="lastName" /><br>
+            <div id="lastNameWrong" class="alert-message"></div><br>
 
-            <label for="zip">Your Postal Code: </label><br/>
-            <input type="number" id="zip" name="zip" /><br/>
-            <div id="zipIncorrect" class="alert-message"></div><br/>
+            <label for="country">
+                country
+                <input mbsc-input id="demo-country-picker" data-dropdown="true" data-input-style="box" data-label-style="stacked" placeholder="Please select..." />
 
-            <label for="city">Your Current City: </label><br/>
-            <input type="text" id="city" name="city" /><br/>
-            <div id="cityIncorrect" class="alert-message"></div><br/>
+            </label><br>
+
+            <label for="zip">Your Postal Code: </label><br>
+            <input type="number" id="zip" name="zip" /><br>
+            <div id="zipIncorrect" class="alert-message"></div><br>
+
+            <label for="city">Your Current City: </label><br>
+            <input type="text" id="city" name="city" /><br>
+            <div id="cityIncorrect" class="alert-message"></div><br>
 
 
             <div id="error-message-container"></div>
