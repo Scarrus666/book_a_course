@@ -122,5 +122,5 @@ function validateEmail()
                 event.preventDefault();
                 document.getElementById("email-wrong").innerHTML ="Please input a correct email adress";
             }     
-      }
+    }
 
