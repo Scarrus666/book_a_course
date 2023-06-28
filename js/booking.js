@@ -60,10 +60,22 @@ function validateForm()
                 document.getElementById("adressIncorrect").innerHTML = "The adress is too short";
             }
 
-        if (document.getElementById("adress-nr").value < 1)
+        if (document.getElementById("adress-nr").value.length < 1)
             {
                 event.preventDefault();
-                document.getElementById("adressNrIncorrect").innerHTML = "Street numbers cannot be lower than 1";
+                document.getElementById("adressNrIncorrect").innerHTML = "Please enter a street number";
+            }
+
+        if (document.getElementById("adress-nr").value.length > 20)
+            {
+                event.preventDefault();
+                document.getElementById("adressNrIncorrect").innerHTML = "Your adress number is too long";
+            }
+
+        if (document.getElementById("phone").value.length < 15)
+            {
+                event.preventDefault();
+                document.getElementById("phoneIncorrect").innerHTML = "";
             }
 
         if (document.getElementById("zip").value.length < 4)
