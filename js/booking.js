@@ -4,7 +4,7 @@ const lastName = document.getElementById("lastName");
 const country = document.getElementById("country");
 const adress = document.getElementById("adress");
 const adressNr = document.getElementById("adress-nr");
-const phone = document.getElementyById("phone");
+const phone = document.getElementById("phone");
 const zip = document.getElementById("zip");
 const city = document.getElementById("city");
 
