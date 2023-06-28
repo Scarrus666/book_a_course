@@ -2,6 +2,9 @@ const email = document.getElementById("email");
 const firstName = document.getElementById("firstName");
 const lastName = document.getElementById("lastName");
 const country = document.getElementById("country");
+const adress = document.getElementById("adress");
+const adressNr = document.getElementById("adress-nr");
+const phone = document.getElementyById("phone");
 const zip = document.getElementById("zip");
 const city = document.getElementById("city");
 
@@ -45,12 +48,23 @@ function validateForm()
                 document.getElementById("lastNameWrong").innerHTML = "Please enter a real name";
             }
 
+        if (document.getElementById("adress").value.length < 3)
+            {
+                event.preventDefault();
+                document.getElementById("adressIncorrect").innerHTML = "The adress is too short";
+            }
 
-        // if (document.getElementById("zip").value.length < 4 || document.getElementById("zip").value.length > 10)
-        //    {                                   // .value.length is for string length
-        //        event.preventDefault();
-        //        document.getElementById("zipIncorrect").innerHTML = "Zip Code Incorrect";
-        //    }
+        if (document.getElementById("adress").value.length > 100)
+            {
+                event.preventDefault();
+                document.getElementById("adressIncorrect").innerHTML = "The adress is too short";
+            }
+
+        if (document.getElementById("adress-nr").value < 1)
+            {
+                event.preventDefault();
+                document.getElementById("adressNrIncorrect").innerHTML = "Street numbers cannot be lower than 1";
+            }
 
         if (document.getElementById("zip").value.length < 4)
             {
