@@ -24,6 +24,8 @@ body
     border-radius: 15px;
     margin: 15px;
     min-height: 100vh;
+    bottom: 0;
+    left: 0;
 }
 
 .page
@@ -35,7 +37,7 @@ body
 .footer
 {
     position: sticky;
-    text-align:center;
+    text-align: center;
     bottom: 0;
     background-color: rgb(206, 177, 132);
     margin-top: auto;
