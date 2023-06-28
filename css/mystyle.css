@@ -20,7 +20,15 @@ body
 {
     background-color: white;
     padding: 25px;
+    border-radius: 25px;
     flex: 1;    
+    margin: 25px;
+}
+
+.page
+{
+    background-color: rgb(206, 177, 132);
+    flex: 1;
 }
 
 .footer
@@ -58,6 +66,8 @@ body
 {
     height: 35px;
     width: 250px;
+    min-width: 33px;
+    max-width: 100%;
     border-width: 2px;
     border-radius: 50px;
     padding-left: 10px;
