@@ -13,12 +13,15 @@ function preserveResult()
     validateForm();
     validateEmail();
 
+    sessionStorage.setItem("emailAdress", email.value);
     sessionStorage.setItem("fNAme", firstName.value);
     sessionStorage.setItem("lName", lastName.value);
     sessionStorage.setItem("selectedCountry", country.value);
+    sessionStorage.setItem("streetAdress", adress.value);
+    sessionStorage.setItem("streetAdressNr", adressNr.value);
+    sessionStorage.setItem("phoneNr", phone.value);
     sessionStorage.setItem("zipCode", zip.value);
     sessionStorage.setItem("cityName", city.value);
-    sessionStorage.setItem("emailAdress", email.value);
 }
 
 function validateForm()
@@ -72,11 +75,17 @@ function validateForm()
                 document.getElementById("adressNrIncorrect").innerHTML = "Your adress number is too long";
             }
 
-        if (document.getElementById("phone").value.length < 15)
-            {
-                event.preventDefault();
-                document.getElementById("phoneIncorrect").innerHTML = "";
-            }
+        //if (document.getElementById("phone").value.length < 7)
+            //{
+                //event.preventDefault();
+                //document.getElementById("phoneIncorrect").innerHTML = "The number is to short. Please check if the country prefix has been added";
+            //}
+
+        //if (document.getElementById("phone").value.length > 16)
+            //{
+                //event.preventDefault();
+                //document.getElementById("phoneIncorrect").innerHTML = "The number is too long. Please write the number using only numbers and using the country prefix";
+            //}
 
         if (document.getElementById("zip").value.length < 4)
             {
@@ -114,3 +123,4 @@ function validateEmail()
                 document.getElementById("email-wrong").innerHTML ="Please input a correct email adress";
             }     
       }
+
