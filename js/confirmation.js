@@ -45,9 +45,22 @@ document.getElementById("zip").innerHTML = resultZip;
 //  It is simpleer and done in one line and without generating variable
 
 
+// --------------------------------------------------------------
+// Stores the Client Data in SessionStorage under other variables
+// and then goes back to the booking page
+// --------------------------------------------------------------
 function goBack()
     {
         sessionStorage.setItem("name", resultFirstNameR);
-        window.open("./booking.html");
+        sessionStorage.setItem("surname", resultLastNameR);
+        sessionStorage.setItem("email", resultEmailR);
+        sessionStorage.setItem("country", resultCountryR);
+        sessionStorage.setItem("phone", resultPhoneR);
+        sessionStorage.setItem("adress", resultAdressR);
+        sessionStorage.setItem("adress-nr", resultAdressNrR);
+        sessionStorage.setItem("city", resultCityR);
+        sessionStorage.setItem("zip", resultZipR);
+
+        window.open("./booking.html","_self");
     }
 

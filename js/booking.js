@@ -123,8 +123,27 @@ function validateEmail()
                 document.getElementById("email-wrong").innerHTML ="Please input a correct email adress";
             }     
     }
-    
+
+ // ----------------------------------------------------------------------
+ // Loads the data from SessionStorage and inserts it into the Input field
+ // ---------------------------------------------------------------------- 
 let nameR = sessionStorage.getItem("name");
+let surnameR = sessionStorage.getItem("surname");
+let emailR = sessionStorage.getItem("email");
+let countryR = sessionStorage.getItem("country");
+let phoneR = sessionStorage.getItem("phone");
+let adressR = sessionStorage.getItem("adress");
+let adressNrR = sessionStorage.getItem("adress-nr");
+let cityR = sessionStorage.getItem("city");
+let zipR = sessionStorage.getItem("zip");
 
 document.getElementById("firstName").value = nameR;
+document.getElementById("lastName").value = surnameR;
+document.getElementById("email").value = emailR;
+document.getElementById("country").value = countryR;
+document.getElementById("phone").value = phoneR;
+document.getElementById("adress").value = adressR;
+document.getElementById("adress-nr").value = adressNrR;
+document.getElementById("city").value = cityR;
+document.getElementById("zip").value = zipR;
 
