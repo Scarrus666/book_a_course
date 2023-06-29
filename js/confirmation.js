@@ -31,9 +31,11 @@ document.getElementById("zip").innerHTML = resultZip;
 
 
 //  Alternative would be: 
-
 //  document.getElementById("name").innerText = sessionStorage.getItem("fName");
-
 //  It is simpleer and done in one line and without generating variable
 
+function goBack()
+    {
+        window.open("./booking.html");
+    }
 
