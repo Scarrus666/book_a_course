@@ -18,6 +18,16 @@ let resultPhone = "Your Phone Number: " + phone;
 let resultZip = "Zip Code: " + zip;
 let resultCity = "City: " + city;
 
+let resultFirstNameR = firstName;
+let resultLastNameR = lastName;
+let resultEmailR = email;
+let resultCountryR = country;
+let resultAdressR = adress;
+let resultAdressNrR = adressNr;
+let resultPhoneR = phone;
+let resultZipR = zip;
+let resultCityR = city;
+
 
 document.getElementById("name").innerHTML = resultFirstName;
 document.getElementById("surname").innerHTML = resultLastName;
@@ -34,8 +44,10 @@ document.getElementById("zip").innerHTML = resultZip;
 //  document.getElementById("name").innerText = sessionStorage.getItem("fName");
 //  It is simpleer and done in one line and without generating variable
 
+
 function goBack()
     {
+        sessionStorage.setItem("name", resultFirstNameR);
         window.open("./booking.html");
     }
 

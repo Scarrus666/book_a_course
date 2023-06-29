@@ -123,4 +123,8 @@ function validateEmail()
                 document.getElementById("email-wrong").innerHTML ="Please input a correct email adress";
             }     
     }
+    
+let nameR = sessionStorage.getItem("name");
+
+document.getElementById("firstName").value = nameR;
 
