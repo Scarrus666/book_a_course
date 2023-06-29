@@ -85,12 +85,17 @@ body
 .completion-form
 {
     background-color: rgb(225, 225, 225);
-    text-shadow: 0 0 3px #FF0000;
     box-shadow: 3px 3px 6px #000000;
     padding: 70px;
     border-radius: 50px;
     max-width: 600px;
     opacity: .95;
+}
+
+.completion-text
+{
+    text-shadow: 0 0 3px #FF0000;
+
 }
 
 .submit-input

@@ -17,7 +17,7 @@
             <div class="row justify-content-center align-items-center text_align_center">
 
                 <div class="col float-left">
-                    <a href="./index.html" target="_self" title="Home"><span class="homelink">Home</span></a>
+                    <a href="./index.html" target="_self" title="Home" class="homelink">Home</a>
                 </div>
 
                 <div class="col center">
@@ -44,19 +44,19 @@
 
             <form id="firstForm" action="./confirmation_booking.html" method="GET" onsubmit="preserveResult()">
 
-                <label for="firstName">Your first name: </label><p></p>
+                <label for="firstName" class="completion-text">Your first name: </label><p></p>
                 <input type="text" class="input" id="firstName" name="firstName" placeholder="Name" /><br>
                 <div id="firstNameWrong" class="alert-message"></div><br>
 
-                <label for="lastName">Last Name: </label><p></p>
+                <label for="lastName" class="completion-text">Last Name: </label><p></p>
                 <input type="text" class="input" id="lastName" name="lastName" placeholder="Surname"/><br>
                 <div id="lastNameWrong" class="alert-message"></div><br>
 
-                <label for="email">Email: </label><p></p>
+                <label for="email" class="completion-text">Email: </label><p></p>
                 <input id="email" type="text" class="input" name="email" placeholder="example@email.com"/><br>
                 <div id="email-wrong" class="alert-message"></div><br>
 
-                <label for="country">Country: </label><p></p>
+                <label for="country" class="completion-text">Country: </label><p></p>
                 <select class="input" id="country" name="country">
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Aland Islands</option>
@@ -312,23 +312,23 @@
                     <option value="ZW">Zimbabwe</option>
                 </select><br><br>
 
-                <label for="phone">Your Phone number: </label><p></p>
+                <label for="phone" class="completion-text">Your Phone number: </label><p></p>
                 <input type="number" class="input" id="phone" name="phone" placeholder="01234567890"/><br>
                 <div id="phoneIncorrect" class="alert-message"></div><br>
 
-                <label for="adress">Your Adress: </label><p></p>
+                <label for="adress" class="completion-text">Your Adress: </label><p></p>
                 <input type="text" class="input" id="adress" name="adress" placeholder="myStreet"/><br>
                 <div id="adressIncorrect" class="alert-message"></div><br>
 
-                <label for="adress-nr">Your Street Number: </label><p></p>
+                <label for="adress-nr" class="completion-text">Your Street Number: </label><p></p>
                 <input type="text" class="input" id="adress-nr" name="adress-nr" placeholder="50"/><br>
                 <div id="adressNrIncorrect" class="alert-message"></div><br>
 
-                <label for="zip">Your Postal Code: </label><p></p>
+                <label for="zip" class="completion-text">Your Postal Code: </label><p></p>
                 <input type="number" class="input" id="zip" name="zip" placeholder="1234"/><br>
                 <div id="zipIncorrect" class="alert-message"></div><br>
 
-                <label for="city">Your Current City: </label><p></p>
+                <label for="city" class="completion-text">Your Current City: </label><p></p>
                 <input type="text" class="input" id="city" name="city" placeholder="myCity"/><br>
                 <div id="cityIncorrect" class="alert-message"></div><br>
 
